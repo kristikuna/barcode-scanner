@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+// import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { TabsPage } from '../pages/tabs/tabs';
-import { CameraPreview, CameraPreviewPictureOptions, CameraPreviewOptions, CameraPreviewDimensions } from '@ionic-native/camera-preview';
+import { CameraPreview, CameraPreviewOptions } from '@ionic-native/camera-preview';
 
 @Component({
   templateUrl: 'app.html'

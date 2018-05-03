@@ -14,6 +14,8 @@ export class ScannerPage {
      }).catch(err => {
          console.log('Error', err);
      });
-  }
-
+   }
+    refresh(){
+      window['location'].reload();
+    }
 }
