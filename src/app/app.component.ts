@@ -33,7 +33,7 @@ export class MyApp {
       
       this.cameraPreview.startCamera(cameraPreviewOpts).then(
         (res) => {
-          console.log(res)
+          console.log(res, 'log??')
         },
         (err) => {
           console.log(err)

@@ -20,7 +20,7 @@ export class ScannerPage {
     this.barcodeScanner.scan(this.options).then((barcodeData) => {
         // console.log(barcodeData + "barcode data");
         this.scanData = barcodeData;
-        // console.log(this.scanData + "this is scan data");
+        console.log(this.scanData + "this is scan data");
     }, (err) => {
         console.log("Error occured : " + err);
     });         
