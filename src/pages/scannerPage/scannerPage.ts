@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { InfoPage } from '../info/info';
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 
 @Component({
@@ -18,15 +19,17 @@ export class ScannerPage {
         prompt : "Scan your barcode "
     }
     this.barcodeScanner.scan(this.options).then((barcodeData) => {
-        // console.log(barcodeData + "barcode data");
-        this.scanData = barcodeData;
+      this.navCtrl.push(InfoPage, {
+         data: this.scanData = barcodeData
+        });
+
         console.log(this.scanData + "this is scan data");
     }, (err) => {
         console.log("Error occured : " + err);
     });         
-
   }
-    refresh(){
-      window['location'].reload();
-    }
+
+   refresh(){
+    window['location'].reload();   
+   }
 }

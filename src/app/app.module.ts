@@ -6,10 +6,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { CameraPreview } from '@ionic-native/camera-preview';
 
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { InfoPage } from '../pages/info/info';
 import { ScannerPage } from '../pages/scannerPage/scannerPage';
 
 @NgModule({
@@ -17,17 +17,21 @@ import { ScannerPage } from '../pages/scannerPage/scannerPage';
     MyApp,
     HomePage,
     TabsPage,
+    InfoPage,
     ScannerPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      tabsPlacement: 'top',
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     TabsPage,
+    InfoPage,
     ScannerPage
   ],
   providers: [

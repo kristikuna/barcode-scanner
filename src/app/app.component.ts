@@ -37,13 +37,7 @@ export class MyApp {
         },
         (err) => {
           console.log(err)
-        });
-
-      // this.cameraPreview.setOnPictureTakenHandler().subscribe((result) => {
-      //   console.log(result);
-      //   // do something with the result
-      // });
-
+        }); 
     });
   }
 }
