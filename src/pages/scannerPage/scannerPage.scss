@@ -1,9 +1,10 @@
-page-home {
+button{
+    width: 65%;
 }
 
-.button-md {
-    width: 25%;
-    height: 5rem;
-    font-size: 1.5rem;
-    border-radius: 15px;
+@media screen and (min-width: 768px) {
+    
+    button {
+        width: 60%;
+    }
 }

@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { CameraPreview } from '@ionic-native/camera-preview';
+import { NativePageTransitions, NativeTransitionOptions } from '@ionic-native/native-page-transitions';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -18,12 +19,13 @@ import { ScannerPage } from '../pages/scannerPage/scannerPage';
     HomePage,
     TabsPage,
     InfoPage,
-    ScannerPage
+    ScannerPage,
+    NativePageTransitions    
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
-      tabsPlacement: 'top',
+      tabsPlacement: 'top'
     })
   ],
   bootstrap: [IonicApp],
@@ -39,6 +41,7 @@ import { ScannerPage } from '../pages/scannerPage/scannerPage';
     SplashScreen,
     BarcodeScanner,
     CameraPreview,
+    NativePageTransitions,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

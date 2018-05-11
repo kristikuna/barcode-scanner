@@ -3,10 +3,10 @@ page-home {
 
 ion-title {
     .toolbar-title-md {
-     font-size: 4rem;
+     font-size: 2rem;
      margin: 0 auto;
-     color: #061282;
-     font-family: "Bungee Shade";
+     font-family: "Bungee Inline";
+     color: #1a2e63;
     }
 }   
 
@@ -18,6 +18,11 @@ ion-title {
     font-size: 1rem;
 }
 
-p { 
-    color:  #488aff;
+p {
+    color: #f4f4f4;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid  #f4f4f4;
+    border-radius: 5px;
+    opacity: .8;
 }

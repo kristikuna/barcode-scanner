@@ -9,12 +9,9 @@
 </ion-header>
 
 <ion-content padding class="homePage">
-    <div *ngIf = "scanData">
-        <p>{{scanData.text}}</p>
-        <p>{{scanData.format}}</p> 
-        <p>{{scanData.cancelled}}</p>
-      </div>
-  <p text-center>
-    I"M AT INFO PAGE
-  </p>
+  <div *ngIf = "scanData" text-center>
+    <p>{{scanData.text}}</p>
+    <p>{{scanData.format}}</p> 
+    <p>{{scanData.cancelled}}</p>
+  </div>
 </ion-content>
